@@ -34,11 +34,26 @@ exports.updateTheSauce = (req, res, next) => {
     const SauceObj = req.file ?
         {
             ...JSON.parse(req.body.sauce),
-            imageURrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
+            imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
         } : {...req.body};
+    // ancien système d'update
+    // Sauce.updateOne({ _id: req.params.id }, { ...SauceObj, _id: req.params.id })
+    //     .then(() => res.status(200).json({ message: 'Objet modifié'}))
+    //     .catch(error => res.status(400).json({ error }))
 
-    Sauce.updateOne({ _id: req.params.id }, {...SauceObj, _id: req.params.id})
-        .then(() => res.status(200).json({ message: 'Objet modifié'}))
+    // Nouveau système d'update qui permet de supprimer l'image actuelle quand une nouvelle est ajoutée
+    Sauce.findOneAndUpdate({_id: req.params.id}, {...SauceObj, _id: req.params.id})
+        .then(oldSauce => {
+            if (req.file && SauceObj.imageUrl) {
+                const filename = oldSauce.imageUrl.split('/images/')[1];
+
+                fs.unlink(`images/${filename}`, () => {
+                    res.status(201).json({ message: 'Objet modifié et ancienne photo supprimée correctement'})
+                })
+            } else {
+                res.status(200).json({ message: 'Objet modifié'})
+            }
+        })
         .catch(error => res.status(400).json({ error }))
 };
 
@@ -47,7 +62,6 @@ exports.removeTheSauce = (req, res, next) => {
         .then(sauce => {
 
             const filename = sauce.imageUrl.split('/images/')[1];
-            console.log(filename);
             // second argument = callBack = que faire quand la fonction s'est éxecuté
             fs.unlink(`images/${filename}`, () => {
                 Sauce.deleteOne({ _id: req.params.id })
@@ -59,9 +73,7 @@ exports.removeTheSauce = (req, res, next) => {
 };
 
 exports.likeTheSauce = (req, res, next) => {
-
-    Sauce.findOne({ _id: req.params.id })
-
+    
     Sauce.findOne({ _id: req.params.id })
         .then(sauce => {
             // On met a jour nos tableaux en fonction du "like" renvoyé par le front

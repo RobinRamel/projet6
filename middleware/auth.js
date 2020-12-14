@@ -4,9 +4,15 @@ const jwt = require('jsonwebtoken');
 module.exports = (req, res, next) => {
     try {
         const tokenRetrieved = req.headers.authorization.split(' ')[1];
-        const tokenDecoded = jwt.verify(tokenRetrieved, 'RANDOM_TOKEN_SECRET');
+        console.log(tokenRetrieved);
+        const tokenDecoded = jwt.verify(tokenRetrieved, process.env.SECRET_TOKEN);
         // on recup l'userId qu'on a précedemment envoyer dans le payload de la method sign de JsonWebToken
         const userId = tokenDecoded.userId;
+
+        req.body.decodedUserId = userId;
+
+        console.log(userId);
+
         if ( req.body.userId && req.body.userId !== userId ) {
             throw 'User ID invalide';
         } else {

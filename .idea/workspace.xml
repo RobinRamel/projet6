@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64441996-d2e7-41f8-9767-0cf71339d432" name="Default Changelist" comment="" />
+    <list default="true" id="64441996-d2e7-41f8-9767-0cf71339d432" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/isOwner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/sauce.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/sauce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1604655066442_habanero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/sauce.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/sauce.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +23,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,6 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -50,7 +70,9 @@
       <updated>1604354248904</updated>
       <workItem from="1604354250488" duration="2431000" />
       <workItem from="1604425817646" duration="1173000" />
-      <workItem from="1604566552997" duration="35170000" />
+      <workItem from="1604566552997" duration="36931000" />
+      <workItem from="1607523326208" duration="8567000" />
+      <workItem from="1607689014262" duration="8144000" />
     </task>
     <servers />
   </component>
@@ -62,9 +84,18 @@
       <screen x="-278" y="-1080" width="1920" height="1080" />
     </state>
     <state x="406" y="-740" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-278.-1080.1920.1080@-278.-1080.1920.1080" timestamp="1604675554267" />
-    <state x="484" y="-866" width="680" height="508" key="find.popup" timestamp="1604660930896">
-      <screen x="-278" y="-1080" width="1920" height="1080" />
+    <state x="-1779" y="116" key="SettingsEditor" timestamp="1607688993531">
+      <screen x="-2560" y="-240" width="2560" height="1440" />
+    </state>
+    <state x="-1779" y="116" key="SettingsEditor/0.0.1920.1200/-2560.-240.2560.1440@-2560.-240.2560.1440" timestamp="1607688993531" />
+    <state x="-2460" y="-140" width="2360" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607685125119">
+      <screen x="-2560" y="-240" width="2560" height="1440" />
+    </state>
+    <state x="-2460" y="-140" width="2360" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1200/-2560.-240.2560.1440@-2560.-240.2560.1440" timestamp="1607685125119" />
+    <state x="-1544" y="45" width="907" height="678" key="find.popup" timestamp="1607685031423">
+      <screen x="-2560" y="-240" width="2560" height="1440" />
     </state>
     <state x="484" y="-866" width="680" height="508" key="find.popup/0.0.1440.900/-278.-1080.1920.1080@-278.-1080.1920.1080" timestamp="1604660930896" />
+    <state x="-1544" y="45" width="907" height="678" key="find.popup/0.0.1920.1200/-2560.-240.2560.1440@-2560.-240.2560.1440" timestamp="1607685031423" />
   </component>
 </project>

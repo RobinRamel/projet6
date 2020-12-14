@@ -7,7 +7,9 @@ const sauceRoutes = require('./routes/sauce');
 
 const path = require('path');
 
-mongoose.connect('mongodb+srv://roram:roramadmin@cluster0.drhnl.mongodb.net/test?retryWrites=true&w=majority',
+require('dotenv').config();
+
+mongoose.connect(process.env.DB_CONNECTION,
     { useNewUrlParser: true,
         useUnifiedTopology: true,
         useFindAndModify: false })
