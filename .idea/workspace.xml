@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="64441996-d2e7-41f8-9767-0cf71339d432" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/sauce.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/sauce.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/isOwner.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/isOwner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +67,8 @@
       <workItem from="1607689014262" duration="10376000" />
       <workItem from="1608211962015" duration="1916000" />
       <workItem from="1608379346218" duration="3838000" />
-      <workItem from="1608740983011" duration="1656000" />
+      <workItem from="1608740983011" duration="3020000" />
+      <workItem from="1608990558738" duration="206000" />
     </task>
     <servers />
   </component>
